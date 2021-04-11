@@ -1,0 +1,128 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+	margin:0;
+	padding:0;
+    box-sizing: border-box;
+	/*border:0;
+	*/
+    /*outline:0;
+	*/
+    /*font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	*/
+}
+h1,h2,h3,h4,h5,h6,em,i {
+	font-weight:100;
+	font-style:normal;
+}
+ul,ol,li {
+	list-style-type:none;
+}
+a {
+	color:#666;
+	text-decoration:none;
+	outline:0;
+}
+a:hover {
+	text-decoration:none;
+}
+
+
+.site-content{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+}
+
+.header-warp{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.footer-warp{
+    height: 200px;
+    width: 100%;
+
+}
+
+.header-logo{
+    width: 130px;
+    height: 100%;
+}
+
+.header-logo > a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-logo img{
+    width: 100%;
+}
+
+.header-warp .menu-list{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 13px;
+}
+
+.menu-list > li {
+    float: left;
+    padding: 0 10px;
+}
+.mobile-menu-btn{
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+.mobile-menu-btn > img {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-propaganda{
+    width: 100%;
+}
+
+.img-text{
+    position: relative;
+}
+.img-text > a{
+    width: 100%;
+    display: block;
+}
+.img-text img{
+    /* width: 100%;
+    height: 420px;
+    object-fit: cover; */
+    max-width: 100%;
+    height: auto;
+    width /***/: auto;
+    border: 0;
+    vertical-align: middle;
+}
+.img-text .it-copy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff
+}
+
+.main-info{
+    margin-top: 15px;
+}
+
+.main-info > .img-text{
+    width: 25%;
+    float: left;
+}

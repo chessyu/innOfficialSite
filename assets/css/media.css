@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 480px){
+    .site-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 920px){
+
+}
+
+@media screen and (max-width: 1060px){
+    .site-content {
+        width: 95%;
+    }
+    .header-warp{
+        width: 90%;
+        margin: auto;
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+    .menu-list{
+        display: none !important;
+    }
+    .header-logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
