@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/vendor.min.css">
 
+
     <script src="./assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/plugins.min.js"></script>
+    <script src="./assets/js/vendor.min.js"></script>
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-      <!-- Header Section Start -->
+<body class="home">
+      <!-- 头部区域 Start -->
       <div class="header section">
 
-        <!-- Header Bottom Start -->
+        <!-- 按钮 Start -->
         <div class="header-bottom section header-sticky">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Header Logo Start -->
                     <div class="col-lg-3 col-6">
                         <div class="header-logo">
-                            <a href="#"><img src="assets/images/logo.png" alt="Site Logo" /></a>
+                            <a href="#"><img class="company-logo" src="" alt="站点 Logo" /></a>
                         </div>
                     </div>
                     <!-- Header Logo End -->
@@ -34,63 +37,18 @@
                     <!-- Header Menu Start -->
                     <div class="col-lg-9 col-6">
                         <!-- Main Menu Start -->
-                        <div class="main-menu d-none d-lg-flex">
-                            <ul>
-                                <li class="has-children">
-                                    <a href="#">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="#">Project</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="project-grid.html">Project Style 1</a></li>
-                                        <li><a href="project-grid-2.html">Project Style 2</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="error-404.html">Error 404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                        <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
+                        <div class="main-menu d-none d-lg-flex headerMenus">
+                            
                         </div>
                         <!-- Main Menu End -->
 
                         <!-- Main Menu Riht Side Start -->
                         <div class="main-menu-right-side d-flex d-lg-none">
-
-                            <!-- Header Search Start -->
-                            <div class="header-search mr-4">
-                                <a class="header-search-icon" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                            <!-- Header Search End -->
-
-                            <!-- Mobile Menu Bar Start -->
+                            <!-- 移动端菜单 Start -->
                             <div class="mobile-menu-bar-wrapper">
                                 <a href="#" class="mobile-menu-bar"><i class="fa fa-bars"></i></a>
                             </div>
-                            <!-- Mobile Menu Bar End -->
+                            <!-- 移动端菜单 End -->
 
                         </div>
                         <!-- Main Menu Riht Side End -->
@@ -100,120 +58,70 @@
                 </div>
             </div>
         </div>
-        <!-- Header Bottom End -->
+        <!-- 按钮 End -->
 
-        <!-- Mobile Menu Start -->
+        <!-- 移动端 Start -->
         <div class="mobile-menu-wrapper">
             <div class="body-overlay"></div>
-            <!-- Mobile Menu Inner Start -->
+            <!-- 移动端 Inner Start -->
             <div class="mobile-menu-inner">
 
-                <!-- Button Close Start -->
+                <!-- 关闭按钮 Start -->
                 <div class="btn-close-bar">
                     <i class="pe-7s-close"></i>
                 </div>
-                <!-- Button Close End -->
+                <!-- 关闭按钮 End -->
 
-                <!-- mobile menu start -->
+                <!-- 移动端 start -->
                 <div class="mobile-navigation">
-                    <nav>
-                        <ul class="mobile-menu">
-                            <li class="has-children">
-                                <a href="#">Home <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index-2.html">Home Two</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">Project <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="project-grid.html">Project Style 1</a></li>
-                                    <li><a href="project-grid-2.html">Project Style 2</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="service.html">Service</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="error-404.html">Error 404</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">Blog <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                    <nav class="headerMenus headerMenus-mobile">
                     </nav>
                 </div>
-                <!-- mobile menu end -->
+                <!-- 移动端 end -->
 
                 <!-- Contact Links/Social Links Start -->
                 <div class="mt-auto">
                     <!-- Contact Link Start -->
                     <ul class="contact-links">
-                        <li><i class="fa fa-phone"></i><a href="#"> +012 3456 789 123</a></li>
-                        <li><i class="fa fa-envelope-o"></i><a href="#"> info@example.com</a></li>
-                        <li><i class="fa fa-clock-o"></i> <span>Monday - Sunday 9.00 - 18.00</span> </li>
+                        <li><i class="fa fa-phone"></i><a href="#" class="company-phone"> +012 3456 789 123</a></li>
+                        <li><i class="fa fa-envelope-o"></i><a href="#" class="company-email"> info@example.com</a></li>
+                        <li><i class="fa fa-clock-o"></i> <span>周一 - 周五 9.00 - 18.00</span> </li>
                     </ul>
                     <!-- Contact Link End -->
 
                     <!-- Social Widget Start -->
                     <div class="widget-social">
-                        <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
-                        <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
-                        <a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                        <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
-                        <a title="Vimeo" href="#"><i class="fa fa-vimeo"></i></a>
+                        <a title="Weixin" href="#"><i class="fa fa-weixin"></i></a>
+                        <a title="Weibo" href="#"><i class="fa fa-weibo"></i></a>
+                        <a title="QQ" href="#"><i class="fa fa-qq"></i></a>
                     </div>
                     <!-- Social Widget End -->
                 </div>
                 <!-- Contact Links/Social Links End -->
 
             </div>
-            <!-- Mobile Menu Inner End -->
+            <!-- 移动端 Inner End -->
         </div>
-        <!-- Mobile Menu End -->
+        <!-- 移动端 End -->
 
-        <!-- Offcanvas Search Start -->
-        <div class="offcanvas-search">
-            <!-- Offcanvas Search Inner Start -->
-            <div class="offcanvas-search-inner">
-                <!-- Button Close Start -->
-                <div class="btn-close-bar">
-                    <i class="pe-7s-close"></i>
-                </div>
-                <!-- Button Close End -->
+    </div>
+    <!-- 头部区域 End -->
 
-                <!-- Offcanvas Search Form Start -->
-                <form class="offcanvas-search-form" action="#">
-                    <input type="text" placeholder="Search Products...">
-                </form>
-                <!-- Offcanvas Search Form End -->
-
+    <!-- 轮播图 Start -->
+    <div class="section">
+        <div class="hero-slider swiper-container">
+            <div class="swiper-wrapper render-swiper">
+               
             </div>
-            <!-- Offcanvas Search Inner End -->
 
+            <div class="swiper-pagination"></div>
+
+            <div class="home-slider-prev swiper-button-prev main-slider-nav"><i class="fa fa-angle-left"></i></div>
+            <div class="home-slider-next swiper-button-next main-slider-nav"><i class="fa fa-angle-right"></i></div>
         </div>
-        <!-- Offcanvas Search End -->
-
     </div>
-    <!-- Header Section End -->
-    <div class="context">
+    <!-- 轮播图 End -->
 
-    </div>
     <footer class="section footer-section bg-secondary">
       <!-- Footer Top Start -->
       <div class="footer-top">
@@ -223,22 +131,22 @@
                       <div class="single-footer-widget">
                           <div class="footer-logo">
                               <a href="index.html">
-                                  <img src="assets/images/logo.png" alt="Logo Image">
+                                  <img class="company-logo" src="" alt="Logo Image">
                               </a>
                           </div>
-                          <p class="desc-content pt-5 pb-3">Lorem ipsum dolor sit amet, consect ascing elit, sed do eiusmod incididunt ut labore et dolore Many desktop</p>
+                          <p class="desc-content pt-5 pb-3 company-companyMark">Lorem ipsum dolor sit amet, consect ascing elit, sed do eiusmod incididunt ut labore et dolore Many desktop</p>
                           <!-- Contact Address Start -->
                           <ul class="widget-address">
-                              <li><i class="fa fa-map-o"></i><span>1234 Road, London, UK</span></li>
-                              <li><i class="fa fa-phone"></i><a href="#">+123 456 789 123</a></li>
-                              <li><i class="fa fa-envelope-o"></i><a href="#">info@example.com</a></li>
+                              <li><i class="fa fa-map-o"></i><span class="company-addr">1234 Road, London, UK</span></li>
+                              <li><i class="fa fa-phone"></i><a href="#" class="company-phone">+123 456 789 123</a></li>
+                              <li><i class="fa fa-envelope-o"></i><a href="#" class="company-email">info@example.com</a></li>
                           </ul>
                           <!-- Contact Address End -->
                       </div>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-3 col-xl-3 mb-10">
                       <div class="single-footer-widget">
-                          <h2 class="widget-title">Our Servcie</h2>
+                          <h2 class="widget-title">我们的服务</h2>
                           <ul class="widget-list pt-6">
                               <li><a href="service.html">Mobile App Development</a></li>
                               <li><a href="service.html">Ui/Ux Design</a></li>
@@ -250,21 +158,17 @@
                   </div>
                   <div class="col-12 col-sm-6 col-lg-2 col-xl-3 mb-10">
                       <div class="single-footer-widget aos-init aos-animate">
-                          <h2 class="widget-title">Quicklink</h2>
-                          <ul class="widget-list pt-6">
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="contact.html">Help Center</a></li>
-                              <li><a href="contact.html">Conditin</a></li>
-                              <li><a href="contact.html">Term Of Use</a></li>
+                          <h2 class="widget-title">热门链接</h2>
+                          <ul class="widget-list pt-6 hot-link">
+                              <!-- <li><a href="contact.html">Term Of Use</a></li> -->
                           </ul>
                       </div>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-10">
                       <div class="single-footer-widget">
-                          <h2 class="widget-title">Get in Touch</h2>
+                          <h2 class="widget-title">联系我们</h2>
                           <div class="widget-body pt-5">
-                              <p class="desc-content mb-0">Enter your email and receive the latest news from us.</p>
+                              <p class="desc-content mb-0">输入你的邮箱地址，我们会以邮箱与您取得联系。</p>
 
                               <!-- Newsletter Form Start -->
                               <div class="newsletter-form-wrap pt-4">
@@ -284,11 +188,9 @@
 
                               <!-- Soclial Link Start -->
                               <div class="widget-social justify-content-start mt-6">
-                                  <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
-                                  <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                  <a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                                  <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
-                                  <a title="Vimeo" href="#"><i class="fa fa-vimeo"></i></a>
+                                  <a title="Weixin" href="#"><i class="fa fa-weixin"></i></a>
+                                  <a title="Weibo" href="#"><i class="fa fa-weibo"></i></a>
+                                  <a title="QQ" href="#"><i class="fa fa-qq"></i></a>
                               </div>
                               <!-- Social Link End -->
                           </div>
@@ -304,15 +206,23 @@
           <div class="row align-items-center footer-bottom">
               <div class="col-12 text-center">
                   <div class="copyright-content">
-                      <p class="mb-0">Copyright©禾盖珠（广州）酒店管理有限公司 版权所有</p>
-                      <p>粤ICP备2021034082号-1</p>
+                      <p class="mb-0" class="company-copyright">Copyright©禾盖珠（广州）酒店管理有限公司 版权所有</p>
+                      <p class="company-keepCode">粤ICP备2021034082号-1</p>
                   </div>
               </div>
           </div>
       </div>
       <!-- Footer Bottom End -->
   </footer>
+
+      <!-- Scroll Top Start -->
+      <a href="#" class="scroll-top" id="scroll-top">
+        <i class="arrow-top fa fa-long-arrow-up"></i>
+        <i class="arrow-bottom fa fa-long-arrow-up"></i>
+    </a>
+    <!-- Scroll Top End -->
+    <script src="./assets/js/config.js"></script>
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/b.js"></script>
+
 </body>
 </html>
