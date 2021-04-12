@@ -96,6 +96,7 @@ a:hover {
 }
 .img-text > a{
     width: 100%;
+    height: 100%;
     display: block;
 }
 .img-text img{
@@ -113,16 +114,102 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     color: #fff
 }
 
 .main-info{
     margin-top: 15px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-info > .img-text{
     width: 25%;
     float: left;
+    padding: 10px 10px 0 10px;
+}
+
+.main-info > .img-text:first-child{
+    padding-left: 0;
+    padding-right: 20px;
+} 
+.main-info > .img-text:last-child{
+    padding-left: 20px;
+    padding-right: 0;
+} 
+
+.section{
+    margin-top: 15px;
+}
+
+.section .title{
+    display: flex;
+    font-size: 14px;
+}
+.section .title h1{
+    color: #333;
+    font-weight: bold;
+    flex: 1;
+    line-height: 45px;
+}
+
+.more{
+    position: relative;
+    width: 45px;
+    line-height: 45px;
+}
+
+.more::before{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 7px;
+    height: 7px;
+    margin: -5px -5px 0 0;
+    border-top: solid 1px #7f7f7f;
+    border-right: solid 1px #7f7f7f;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+}
+
+.section ul{
+    display: flex;
+}
+
+.section ul > li{
+    flex: 1;
+}
+
+.section ul > li:first-child{
+    padding-right: 10px;
+}
+
+.section ul > li:nth-child(2){
+    padding:0 5px;
+}
+
+.section ul > li:last-child{
+    padding-left: 10px;
+}
+
+.section .section-news{
+    display: unset;
+}
+
+.section .section-news li{
+    padding: 5px 0 !important;
+}
+
+.section .section-news li .news-date{
+    font-size: small;
+    color: #999;
+}
+.section .section-news li .news-con{
+    color: #666;
 }
