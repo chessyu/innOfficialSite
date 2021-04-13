@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 480px){
-    .site-content {
+    .site-content,.footer-contier {
         width: 100% !important;
     }
     .main-info > .img-text{
@@ -11,6 +11,22 @@
     .main-info{
         margin-top: 0;
     }
+    .section .title{
+        margin-left: 15px;
+    }
+    .section .section-news{
+        margin-left: 15px;
+        display: block !important;
+    }
+    .footer-contier{
+        padding: 0 15px;
+    }
+    .brief > p{
+        width: 100% !important;
+    }
+    /* .brief:last-child{
+        text-align: center;
+    } */
 }
 
 @media screen and (max-width: 767px){
@@ -21,6 +37,7 @@
         padding: 0 !important;
         margin-top: 5px;
     }
+
 }
 
 @media screen and (max-width: 920px){
@@ -28,7 +45,7 @@
 }
 
 @media screen and (max-width: 1060px){
-    .site-content {
+    .site-content,.footer-contier {
         width: 95%;
     }
     .header-warp{

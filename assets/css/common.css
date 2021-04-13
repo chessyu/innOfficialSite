@@ -22,6 +22,7 @@ a {
 	color:#666;
 	text-decoration:none;
 	outline:0;
+    cursor: pointer;
 }
 a:hover {
 	text-decoration:none;
@@ -42,9 +43,8 @@ a:hover {
     position: relative;
 }
 .footer-warp{
-    height: 200px;
     width: 100%;
-
+    background-color: #000;
 }
 
 .header-logo{
@@ -199,17 +199,91 @@ a:hover {
 }
 
 .section .section-news{
-    display: unset;
+    display: block !important;
+    margin-bottom: 20px;
 }
 
 .section .section-news li{
-    padding: 5px 0 !important;
+    padding: 7px 0 !important;
 }
 
 .section .section-news li .news-date{
     font-size: small;
     color: #999;
+    margin-bottom: 7px;
 }
 .section .section-news li .news-con{
     color: #666;
 }
+
+.footer-contier{
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+    color: #fff;
+}
+
+.copyright{
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #8b8b8b;
+}
+.copyright > p{
+    padding: 5px 0;
+} 
+.c-keep{
+    padding-top: 5px;
+}
+
+.contier-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.brief{
+    flex:1;
+    padding: 15px 0;
+
+}
+
+.brief-ul {
+    padding-top: 15px;
+    width: 390px;
+    min-width: 390px;
+    margin: auto;
+    display: flex;
+}
+
+.brief-ul>li{
+    flex: 1;
+    text-align: center;
+    border-right: 2px solid #666;
+    line-height: 1;
+}
+
+.brief-ul>li:last-child{
+    border-right: 0;
+}
+
+.brief-ul >li >a{
+    color: #fff;
+}
+
+.brief img{
+    width: 150px;
+
+}
+.brief > p{
+    text-align: justify;
+    text-indent: 1em;
+    font-size: 14px;
+    color: #666;
+    /* width: 70%; */
+}
+
+.brief-title{
+    font-size: 18px;
+}
+
+
