@@ -1,0 +1,39 @@
+.header{
+    position: relative;   
+}
+
+.custom .site-content{
+    width: 100%;
+    margin: unset;
+    max-width: unset;
+    background: rgba(0,0,0,.2);
+    z-index: 2;
+}
+
+.custom .site-content a{
+    color: #fff;
+}
+
+.custom .header-warp .menu-list{
+    font-size: 15px;
+}
+
+.custom .header-warp{
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+    height: 90px;
+}
+
+.bg-img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -90px;
+}
+.bg-img img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+

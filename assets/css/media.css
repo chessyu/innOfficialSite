@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 480px){
-    .site-content,.footer-contier {
+    .site-content,.footer-contier,.w1024 {
         width: 100% !important;
     }
     .main-info > .img-text{
@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 1060px){
-    .site-content,.footer-contier {
+    .site-content,.footer-contier,.w1024 {
         width: 95%;
     }
     .header-warp{
