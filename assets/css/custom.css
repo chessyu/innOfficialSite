@@ -24,16 +24,40 @@
     margin: auto;
     height: 90px;
 }
-
-.bg-img{
+.margin-90{
+    margin-top: -90px;
+}
+.bg-img,.swiper-slide-box{
     width: 100%;
     height: auto;
     display: block;
-    margin-top: -90px;
 }
-.bg-img img{
+
+.bg-img img,.swiper-slide-box img{
     display: block;
     width: 100%;
     object-fit: cover;
 }
 
+.li-active{
+    position: relative;
+    
+}
+
+.li-active::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background: #fff;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #ddd !important;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active{
+    background: #ddd;
+}

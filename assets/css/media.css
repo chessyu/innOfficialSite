@@ -83,4 +83,13 @@
         padding-right: 0;
     } 
 
+    .c-left-block .c-block{
+        display: unset;
+    }
+    .c-left-block .c-block .c-block__image{
+        width: 100%;
+    }
+    .c-left-block .c-block .c-block__text{
+        width: 100%;
+    }
 }
