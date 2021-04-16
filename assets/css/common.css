@@ -419,18 +419,44 @@ a:hover {
     background: #000;
 }
 
-.text-title{
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 20px;
+
+
+.content-min p{
+    text-align: center;
+    font-family: 华文楷体;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 30px;
 }
 
-.text-content{
-    text-align: justify;
-    font-size: 14px;
-    max-width: 505px;
-    margin: auto;
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-weight: bold;
+
+.people-name{
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 500px;
+}
+strong{
+    float: center;
+    font-family: 华文宋体;
+    line-height: 50px;
+}
+.people-content{
+    text-align: center;
+    font-family: 华文宋体;
+    line-height: 40px;
+}
+.people1 hr{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 60%;
+    color: #7f7f7f;
+}
+.people-content1{
+    text-align: center;
+    font-family: 华文宋体;
+    line-height: 20px;
+}
+.people1{
+    margin-bottom: 50px;
 }
