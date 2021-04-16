@@ -2,6 +2,13 @@ $(function(){
     //店铺地址赋值
     $('.storeMap').attr({"href":"https://www.amap.com/search?query=%E5%85%A8%E5%BF%83%E6%97%85%E9%A6%86&city=440100&geoobj=113.337388|23.191003|113.341214|23.193152&zoom=19.1","target":'_blank'})
 
+    // 移动端菜单切换
+    $(".mobile-menu-btn").click(function(){
+        var li = $(".menu-list").html();
+        $(".mobil-menu").html(li);
+        $(".mobil-menu").show();
+    })
+
     //表头菜单固定
     $(window).on('scroll', function () {
 		if ($(this).scrollTop() > 250) {

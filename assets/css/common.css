@@ -373,7 +373,7 @@ a:hover {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
+    width: 20px;
     height: 2px;
     background: black;
 }
@@ -389,7 +389,6 @@ a:hover {
 }
 
 .c-block{
-    margin-top: 23px;
     overflow: hidden;
 }
 
@@ -404,7 +403,7 @@ a:hover {
 }
 
 .hr{
-    margin-top: 25px;
+    margin: 50px 0;
     width: 100%;
     height: 1px;
     position: relative;
@@ -413,14 +412,36 @@ a:hover {
     content: "";
     position: absolute;
     left: 50%;
-    width: 10px;
+    width: 20px;
     transform: translateX(-50%);
     height: 2px;
     background: #000;
 }
 
 
+.bg-img-s{
+    width: 100%;
+    height: 780px;
+    background: url('../images/heart_main_42.jpg') no-repeat;
 
+}
+
+.mobil-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000b5;
+    text-align: center;
+}
+.mobil-menu li{
+    padding: 10px 0;
+}
+
+
+/* 
 .content-min p{
     text-align: center;
     font-family: 华文楷体;
@@ -458,5 +479,6 @@ strong{
     line-height: 20px;
 }
 .people1{
-    margin-bottom: 50px;
-}
+    margin-bottom: 15px;
+    font-weight: bold;
+} */
