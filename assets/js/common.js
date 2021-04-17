@@ -4,9 +4,16 @@ $(function(){
 
     // 移动端菜单切换
     $(".mobile-menu-btn").click(function(){
-        var li = $(".menu-list").html();
-        $(".mobil-menu").html(li);
-        $(".mobil-menu").show();
+        if($(this).find("img").hasClass('menu-active')){
+            $(this).find("img").removeClass("menu-active")
+            $(".mobil-menu").slideUp();
+        }else{
+            $(this).find("img").addClass("menu-active")
+            var li = $(".menu-list").html();
+            $(".mobil-menu").html(li);
+            $(".mobil-menu").slideDown();
+        }
+        
     })
 
     //表头菜单固定
@@ -38,6 +45,7 @@ $(function(){
 		effect: 'slide',
 		parallax: true,
         lazyLoading:true,
+        autoplay: true,
         navigation: {
             nextEl: '.home-slider-next',
             prevEl: '.home-slider-prev',
@@ -48,4 +56,22 @@ $(function(){
 			clickable: 'true',
 		},
     });
+
+    $(window).on('scroll', function(){
+		AOS.init({
+			duration: 1200, // values from 0 to 3000, with step 50ms
+			disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+			offset: 30, // offset (in px) from the original trigger point
+			once: true,
+			easing: 'ease',
+		  });
+	});
+
+	AOS.init({
+		duration: 1200, // values from 0 to 3000, with step 50ms
+		disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+		offset: 30, // offset (in px) from the original trigger point
+		once: true,
+		easing: 'ease',
+	});
 })

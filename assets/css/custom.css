@@ -24,6 +24,20 @@
     margin: auto;
     height: 90px;
 }
+
+.custom .mobil-menu{
+    display: none;
+    background: #00000054;
+    top: 90px;
+}
+.custom .mobil-menu li a{
+    color: #fff;
+}
+
+.custom .mobil-menu .li-active::after{
+    bottom: 5px;
+}
+
 .margin-90{
     margin-top: -90px;
 }

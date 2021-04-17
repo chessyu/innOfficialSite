@@ -27,6 +27,19 @@
     /* .brief:last-child{
         text-align: center;
     } */
+
+    .compant-tip{
+        flex-direction: column;
+    }
+    .compant-tip .company-img{
+        flex:1;
+        width: 100%;
+    }
+
+    .compant-tip .company-img .bottom-img{
+        position: unset;
+    }
+    
 }
 
 @media screen and (max-width: 767px){
