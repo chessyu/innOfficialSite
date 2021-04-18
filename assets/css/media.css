@@ -51,6 +51,17 @@
         margin-top: 5px;
     }
 
+    .team-ul .team-li{
+        flex-direction: column;
+        text-align: center ;
+    }
+    .team-ul .team-li .head{
+        width: 100%;
+    }
+    .team-ul .text-right{
+        flex-direction: column-reverse;
+    }
+
 }
 
 @media screen and (max-width: 920px){
@@ -104,5 +115,11 @@
     }
     .c-left-block .c-block .c-block__text{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1061px){
+    .mobil-menu{
+        display: none !important;
     }
 }
