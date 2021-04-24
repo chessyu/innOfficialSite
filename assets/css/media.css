@@ -39,6 +39,11 @@
     .compant-tip .company-img .bottom-img{
         position: unset;
     }
+
+    .qusetion{
+        flex-direction: column;
+        text-align: center;
+    }
     
 }
 
@@ -60,6 +65,9 @@
     }
     .team-ul .text-right{
         flex-direction: column-reverse;
+    }
+    .re-right{
+        flex-direction: column;
     }
 
 }

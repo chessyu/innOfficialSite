@@ -38,29 +38,46 @@ $(function(){
         slidesPerView: 1,
 		effect: 'fade',
 		parallax: true,
-        autoplay: true,
+        autoplay: {
+            disableOnInteraction: false,    // 用户操作swiper之后，是否禁止autoplay
+        },
 	});
+
+    
 
     // 图片轮播
     var testimonialCarousel = new Swiper('.swiper-slide-box', {
         loop: true,
         speed: 750,
+        delay:500,
         spaceBetween: 30,
         slidesPerView: 1,
 		effect: 'slide',
-		parallax: true,
+		// parallax: true,
         lazyLoading:true,
-        autoplay: true,
+        autoplay: {
+            disableOnInteraction: false,    // 用户操作swiper之后，是否禁止autoplay
+        },
         navigation: {
             nextEl: '.home-slider-next',
             prevEl: '.home-slider-prev',
 		},
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: 'true',
-		},
+		// pagination: {
+		// 	el: '.swiper-pagination',
+		// 	type: 'bullets',
+		// 	clickable: 'true',
+		// },
     });
+
+    //图片地址赋值
+    var val = $(".sections>input").val();
+    var imgName = $(".sections>input").attr("imgName")
+    var img = '';
+    for(var i =0; i< val; i++){
+        img += `<img src="../assets/images/${imgName}${i+1}.jpg" class="zoomImg" alt="" />`
+    }
+    $(".zoomImg-hide-box").html(img);
+
 
     $(window).on('scroll', function(){
 		AOS.init({
@@ -81,4 +98,8 @@ $(function(){
 	});
 
     FunLazy();
+    
 })
+
+showZoomImg('.zoomImgshow', 'text');
+

@@ -71,7 +71,7 @@ a:hover {
 }
 
 .header-logo{
-    width: 130px;
+    width: 100px;
     height: 100%;
 }
 
@@ -90,9 +90,12 @@ a:hover {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    font-size: 13px;
+    font-size: 13px; 
 }
 
+.img-text .text-bottom{
+    top:80% !important;
+}
 .img-text .it-main-text{
     font-size: 35px !important;
 }
@@ -165,9 +168,10 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
-    color: #fff
+    color: #fff;
+    white-space: nowrap;
 }
 
 .main-info{
@@ -427,6 +431,7 @@ a:hover {
     background: #f2f2f2;
     padding: 77px 63px;
     width: 590px;
+    position: relative;
 }
 .c-block__image{
     position: relative;
@@ -470,10 +475,20 @@ a:hover {
     object-fit: cover;
 }
 
+.bg-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .menu-active{
     transform: rotate(90deg);
 }
 
+.be-aware{
+    width: 100%;
+    height: 700px;
+}
 
 
 .mobil-menu{
@@ -508,6 +523,8 @@ a:hover {
 .compant-tip{
     display: flex;
     padding: 30px 0;
+    margin: 30px auto;
+    width: 80%;
 }
 
 .compant-tip .company-img{
@@ -570,7 +587,8 @@ a:hover {
 
 .compant-tip .be-container .be-box p{
     text-align: justify;
-    text-indent: 1em;
+    margin: 40px 0;
+    /* text-indent: 1em; */
 }
 
 .detail{
@@ -693,4 +711,143 @@ a:hover {
 
 .team-ul .team-li .text-right{
     text-align: right;
+}
+
+.qusetion{
+    display: flex;
+    margin: 100px auto;
+    
+}
+
+.qusetion h6{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.qusetion .qu-left{
+    flex: 1;
+}
+
+.qusetion .qu-right{
+    flex: 1;
+}
+
+.qu-box{
+    font-size: 13px;
+    margin: 20px 0;
+
+}
+
+.qu-box p{
+    padding: 5px 0;
+}
+
+.be-about{
+    padding: 0 30px 0 30px;
+    margin-bottom: 60px;
+}
+
+.be-about h1{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: -35px;
+    z-index: 9;
+}
+
+.be-about p{
+    font-weight: 700;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+.be-about .be-box{
+    margin: 15px 0;
+}
+
+.re-content{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.re-left{
+    width: 150px;
+    
+}
+
+.re-right{
+    flex: 1;
+    background: #fafafa;
+    display: flex;
+}
+
+.re-icon{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.re-icon::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: url(../images/ar.gif) no-repeat;
+    position: absolute;
+    left: 6px;
+    top: 7px;
+
+
+}
+.re-list{
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 19px;
+   
+}
+.re-list:hover{
+    background-color: #ebebeb ;
+}
+.re-title{
+    font-size: 14px ;
+    font-weight: bold;
+    color: #333;
+}
+
+.r-store{
+    flex:1;
+    position: relative;
+}
+.r-store>span{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    color: #893434;
+    text-align: center;
+    display: block;
+    width: 175px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.r-store-list{
+    flex:1;
+    padding: 30px 0;
+    color: #893434;
+}
+.r-store-list .re-list{
+    font-size: 16px;
+}
+
+.show_moer{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #7070f8;
 }
