@@ -2,6 +2,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 	margin:0;
 	padding:0;
     box-sizing: border-box;
+    font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
 	/*border:0;
 	*/
     /*outline:0;
@@ -486,8 +487,14 @@ a:hover {
 }
 
 .be-aware{
+    text-align: center;
     width: 100%;
-    height: 700px;
+    height: 311px;
+    display: flex;
+}
+.be-aware > img{
+    margin: auto;
+    border-radius: 10px;
 }
 
 
@@ -761,6 +768,7 @@ a:hover {
     font-weight: 700;
     line-height: 23px;
     font-size: 14px;
+    font-family:"楷体","楷体_GB2312"; 
 }
 
 .be-about .be-box{
