@@ -29,6 +29,18 @@ a:hover {
 	text-decoration:none;
 }
 
+@font-face{
+    /* 字体名称随意起 */
+    font-family: yisuziti;
+    /*你下载字体所在的位置*/
+    src: url('../fonts/fontAwesome/DFLiuLiuSC24-W7.otf');
+}
+
+@font-face {
+    font-family: xingkai;
+    src: url('../fonts/fontAwesome/RuiZiYunZiKuXingKaiGB-2.ttf');
+}
+
 .sticky{
     position: fixed !important;
     top: 0;
@@ -59,9 +71,24 @@ a:hover {
     position: relative;
     max-width: 1024px;
 }
-
+.main-header{
+    /* background: rgba(0,0,0,.2); */
+    /* position: absolute; */
+    z-index: 3;
+    width: 100%;
+}
+.main-header .header{
+    background: rgba(0,0,0,.2);
+    z-index: 5;
+    width: 100%;
+}
+.main-header .header-warp{
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+}
 .header-warp{
-    height: 70px;
+    height: 90px;
     width: 100%;
     display: flex;
     position: relative;
@@ -91,19 +118,27 @@ a:hover {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    font-size: 13px; 
+    font-size: 15px; 
+}
+.moer-menu-list>li{
+    line-height: 1;
+    padding: 12px 0;
+}
+.main-header .header-warp .menu-list a{
+    color: #fff;
 }
 
 .img-text .text-bottom{
     top:80% !important;
 }
 .img-text .it-main-text{
-    font-size: 35px !important;
+    font-size: 58px !important;
 }
 
 .menu-list > li {
     float: left;
     padding: 0 10px;
+    line-height: 90px;
 }
 .mobile-menu-btn{
     display: none;
@@ -120,6 +155,9 @@ a:hover {
 
 .main-propaganda{
     width: 100%;
+}
+.header-img{
+    margin-top: -90px;
 }
 
 .img-text{
@@ -165,6 +203,7 @@ a:hover {
     display: block;
 }
 .img-text .it-copy{
+    font-family: xingkai;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -397,7 +436,7 @@ a:hover {
 .li-active::after{
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 31px;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
@@ -496,12 +535,34 @@ a:hover {
     margin: auto;
     border-radius: 10px;
 }
-
-
+.mobil-menu .moer-menu-list{
+    bottom: -68px;
+    left: 179px;
+    
+}
+.mobil-menu .moer-menu-list a{
+    color: #fff;
+}
+.moer-menu-list{
+    display: none;
+    position: absolute;
+    bottom: -115px;
+    left: -50px;
+    width: 150px;
+    background: rgba(0,0,0,.2);
+    text-align: center;
+    padding: 19px 10px;
+}
+.menu-list-pp:hover .moer-menu-list{
+    display: block;
+}
+.menu-list-pp{
+    position: relative;
+}
 .mobil-menu{
     display: none;
     position: absolute;
-    top: 70px;
+    top: 90px;
     left: 18px;
     width: 200px;
     background: #fff;
@@ -859,3 +920,8 @@ a:hover {
     cursor: pointer;
     color: #7070f8;
 }
+
+.hero-img{
+    width: 100%;
+}
+

@@ -24,9 +24,9 @@ $(function(){
     //表头菜单固定
     $(window).on('scroll', function () {
 		if ($(this).scrollTop() > 250) {
-			$('.custom .site-content').addClass('sticky');
+			$('.custom .site-content, .main-header .header').addClass('sticky');
 		} else {
-			$('.custom .site-content').removeClass('sticky');
+			$('.custom .site-content, .main-header .header').removeClass('sticky');
 		}
 	});
 

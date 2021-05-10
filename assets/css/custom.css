@@ -37,6 +37,12 @@
 .custom .mobil-menu .li-active::after{
     bottom: 5px;
 }
+.custom-menu.mobil-menu{
+    background: #00000054;
+}
+.custom-menu li a{
+    color: #fff;
+}
 
 .margin-90{
     margin-top: -90px;
@@ -61,7 +67,7 @@
 .li-active::after{
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 31px;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
