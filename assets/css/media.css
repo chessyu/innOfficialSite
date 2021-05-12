@@ -28,7 +28,7 @@
         text-align: center;
     } */
 
-    .compant-tip{
+    /* .compant-tip{
         flex-direction: column;
     }
     .compant-tip .company-img{
@@ -38,7 +38,7 @@
 
     .compant-tip .company-img .bottom-img{
         position: unset;
-    }
+    } */
 
     .qusetion{
         flex-direction: column;
