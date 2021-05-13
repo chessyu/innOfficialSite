@@ -41,6 +41,11 @@ a:hover {
     src: url('../fonts/fontAwesome/RuiZiYunZiKuXingKaiGB-2.ttf');
 }
 
+/* @font-face {
+    font-family: Arabic;
+    src: url('../fonts/fontAwesome/Arabic Typesetting.ttf');
+} */
+
 .sticky{
     position: fixed !important;
     top: 0;
@@ -202,8 +207,16 @@ a:hover {
     height: 100%;
     display: block;
 }
-.img-text .it-copy{
+.main-logo-text{
+    top: 90% !important;
     font-family: xingkai;
+}
+.header-img .img-auto{
+    max-width: 1024px;
+    margin: auto;
+}
+.img-text .it-copy{
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -603,7 +616,16 @@ a:hover {
 .text-code{
     font-size: 36px;
     color: #ddd;
-    font-family: cursive;
+    font-family: Arabic;
+}
+
+.text-code>img{
+    width: 275px;
+}
+
+.quanxin > img{
+    width: 160px;
+    margin-left: -10px;
 }
 
 .text-tilte{
@@ -644,7 +666,7 @@ a:hover {
 }
 
 .founder-case{
-    padding-left: 60px;
+    padding:80px 0 0 60px;
 }
 .founder-name{
     width: 40%;
@@ -669,7 +691,7 @@ a:hover {
 .founder-content{
     /* text-indent: 2em; */
     font-size: 20px;
-    font-family: Microsoft YaHei;
+    font-family: SimSun;
     color: #333;
     margin: 20px 0;
 }
