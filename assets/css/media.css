@@ -24,6 +24,10 @@
     .brief > p{
         width: 100% !important;
     }
+    
+    .img-text .it-main-text{
+        font-size: 30px !important;
+    }
     /* .brief:last-child{
         text-align: center;
     } */
