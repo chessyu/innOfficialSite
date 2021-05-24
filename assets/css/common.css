@@ -212,8 +212,8 @@ a:hover {
     font-family: xingkai;
 }
 .header-img .img-auto{
-    max-width: 1024px;
-    margin: auto;
+    /* max-width: 1024px;
+    margin: auto; */
 }
 .img-text .it-copy{
     
