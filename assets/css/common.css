@@ -214,6 +214,7 @@ a:hover {
 .header-img .img-auto{
     /* max-width: 1024px;
     margin: auto; */
+    object-fit: cover;
 }
 .img-text .it-copy{
     
