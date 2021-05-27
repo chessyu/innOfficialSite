@@ -69,6 +69,19 @@ $(function(){
 		// },
     });
 
+    // 合作伙伴
+    var cooperswiper = new Swiper('.cooper-swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+
     //图片地址赋值
     var val = $(".sections>input").val();
     var imgName = $(".sections>input").attr("imgName")
