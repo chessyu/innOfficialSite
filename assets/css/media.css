@@ -73,7 +73,6 @@
     .re-right{
         flex-direction: column;
     }
-
 }
 
 @media screen and (max-width: 920px){
@@ -128,7 +127,27 @@
     .c-left-block .c-block .c-block__text{
         width: 100%;
     }
+
+    .s-contiter{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .s-title{
+        padding: 20px 0;
+    }
+    .ss-box{
+        flex: unset;
+        width: 50%;
+    }
+
+    .swiper-2 .ss-box{
+        width: 100%;
+    }
 }
+
+
+
+
 
 @media screen and (min-width: 1061px){
     .mobil-menu{

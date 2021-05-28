@@ -970,8 +970,8 @@ a:hover {
 
 .cooper-swiper-container{
     height: 635px;
-    background: url(../images/cooper-bg.jpg) no-repeat 0;
-    background-size: 100%;
+    background: url(../images/cooper-bg.jpg) no-repeat center / cover;
+    /* background-size: 100%; */
 }
 
 .coopersite-content{
@@ -984,8 +984,13 @@ a:hover {
 
 .swper-silde-contiter{
     color:#fff;
-    
+    text-shadow: 0 0 1px #333;
 }
+
+/* .swiper-1{
+    background: url(../images/cooper-bg.jpg) no-repeat center / cover;
+    background-size: 100%;
+} */
 
 .s-title{
     padding: 100px 0 100px 0;
@@ -1036,4 +1041,47 @@ a:hover {
 .ss-box p{
     line-height: 24px;
     font-size: 15px;
+}
+
+
+.bg-title{
+    text-align: center;
+    background: #cec9cd78;
+    padding: 60px 0;
+    font-size: 24px;
+}
+
+.bg-content{
+    height: 400px;
+    padding: 50px 0;
+    background: rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-3 .bg-content{
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: unset;
+    padding: 10px 0;
+}
+
+.swiper-3 .ss-box{
+    width: 33%;
+    flex: unset;
+}
+
+.swiper-3 .ss-box > img {
+    width: 40px;
+    position: relative;
+    top: 10px;
+}
+
+.swiper-4 .bg-content{
+    text-align: center;
+}
+
+.swiper-4 .wechat{
+    width: 120px;
+    margin:15px auto;
 }
