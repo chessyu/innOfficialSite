@@ -48,6 +48,8 @@
         flex-direction: column;
         text-align: center;
     }
+
+
     
 }
 
@@ -143,6 +145,23 @@
     .swiper-2 .ss-box{
         width: 100%;
     }
+
+    .new-home .c-block{
+        flex-direction: column;
+    }
+    .new-home .c-block__text, .new-home .c-block__image{
+        width: 100%;
+        text-align: center;
+    }
+    .section-2 .bg-h{
+        position: unset;
+        left: unset;
+    }
+    .new-home .c-block__text{
+        padding: 10px;
+    }
+
+
 }
 
 

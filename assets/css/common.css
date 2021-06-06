@@ -41,10 +41,10 @@ a:hover {
     src: url('../fonts/fontAwesome/RuiZiYunZiKuXingKaiGB-2.ttf');
 }
 
-/* @font-face {
+@font-face {
     font-family: Arabic;
     src: url('../fonts/fontAwesome/Arabic Typesetting.ttf');
-} */
+}
 
 .sticky{
     position: fixed !important;
@@ -216,6 +216,7 @@ a:hover {
     /* max-width: 1024px;
     margin: auto; */
     object-fit: cover;
+    width: 100%;
 }
 .img-text .it-copy{
     
@@ -1084,4 +1085,124 @@ a:hover {
 .swiper-4 .wechat{
     width: 120px;
     margin:15px auto;
+}
+
+.problem-img{
+    position: relative;
+}
+.problem-img::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.probem-absoute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.probem-absoute > div{
+    padding: 5px
+}
+.probem-absoute > div p{
+    text-shadow: 0 0 1px #333;
+}
+
+.probem-absoute > div p:first-child{
+    font-size: 15px;
+}
+.img-pro{
+    width: 110px;
+    margin: auto;
+}
+.new-home {
+    margin-top: 55px;
+}
+.new-home .text-title{
+    color: #7458a3;
+    font-size: 18px;
+    font-family: xingkai ;
+}
+
+.new-home .c-block__text{
+    width: 500px;
+    padding: 45px 90px;
+    font-size: 14px;
+    color: #4f4f4f;
+    text-align: center;
+}
+.new-home .c-block__image{
+    width: calc(100% - 550px);
+}
+.new-home .text-content{
+    padding: 5px 0;
+}
+.new-home  .text-title{
+    margin-bottom: 20px;
+}
+
+.new-home .show_moer{
+    font-size: 12px;
+    text-decoration: underline;
+    display: block;
+    margin-top: 50px;
+    position: unset;
+    color: unset;
+}
+.new-home .swiper-button-next,.new-home .swiper-button-prev{
+    display: none;
+}
+
+.bg-wite{
+    background-color: #fff !important;
+}
+.new-home .h-over-img{
+    width: 100%;
+    object-fit: cover;
+}
+.new-home .text-title-t{
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.new-home .text-title-t::after{
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: -25px;
+    width: 10px;
+    height: 3px;
+    background-color: #7458a3;
+}
+.new-home .text-title-t::before{
+    content: '';
+    position: absolute;
+    top: 21px;
+    right:  -25px;
+    width: 10px;
+    height: 3px;
+    background-color: #7458a3;
+}
+
+
+.section-2 .c-block__text{
+    background-color: unset;
+}
+.section-2 .bg-h{
+    background-color: #f0f0f0;
+    position: absolute;
+    left: -55px;
+    width: 610px;
+    height: 85%;
+}
+
+.t-t-t{
+    margin-bottom: 20px;
 }
